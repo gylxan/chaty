@@ -1,0 +1,36 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#__next {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+}
+
+#__next > main {
+  grid-area: main;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
